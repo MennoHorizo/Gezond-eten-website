@@ -1,17 +1,19 @@
 const express = require('express');
 const app = express();
 const port = 80;
+const path = require('path')
 const router = express.Router()
 require("dotenv").config()
 var cors = require('cors')
 
 const bodyParser = require('body-parser')
 
-app.use('/static', express.static('./html'))
-
 router.get('/', (req, res, next) => {
-
+  res.sendFile(path.join(__dirname, '/website/index.html'))
 })
+
+const htmlPath = path.join(__dirname, 'website');
+app.use(express.static(htmlPath));
 
 
 app.use(express.json());
