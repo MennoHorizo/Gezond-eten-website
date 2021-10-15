@@ -1,15 +1,32 @@
 const express = require('express');
 const app = express();
-const port = 80;
 const path = require('path')
 const router = express.Router()
 require("dotenv").config()
 var cors = require('cors')
 
+const port = process.env.PORT;
+
 const bodyParser = require('body-parser')
 
 router.get('/', (req, res, next) => {
   res.sendFile(path.join(__dirname, '/website/index.html'))
+})
+
+router.get('/recepten', (req, res, next) => {
+  res.sendFile(path.join(__dirname, '/website/html/recepten.html'))
+})
+
+router.get('/BMI', (req, res, next) => {
+  res.sendFile(path.join(__dirname, '/website/html/BMI.html'))
+})
+
+router.get('/quiz', (req, res, next) => {
+  res.sendFile(path.join(__dirname, '/website/html/Quiz.html'))
+})
+
+router.get('/spel', (req, res, next) => {
+  res.sendFile(path.join(__dirname, '/website/html/spell.html'))
 })
 
 const htmlPath = path.join(__dirname, 'website');
