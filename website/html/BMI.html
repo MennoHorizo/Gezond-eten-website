@@ -7,6 +7,8 @@
     <title>BMI Calculator</title>
     <link rel="stylesheet" href="../css/standard.css">
     <link rel="stylesheet" href="/css/standard.css">
+    <link rel="stylesheet" href="../css/BMI.css">
+    <link rel="stylesheet" href="/css/BMI.css">
 </head>
 <body>
     <header>
@@ -24,7 +26,29 @@
     </header>
     <main>
         <div id="main-div">
-            
+            <div id="text-main">
+                <p>Hallo voer hier je gegevens in: <br>
+                    De calculator berekent of je gezond bent, <br>
+                     door uw leeftijd, lengte en uw gewicht in een formule te stoppen.
+                </p>
+            </div>
+            <div id="main">
+                <form action="" method="post">
+                    <label id="label-leeftijd" for="leeftijd">Leeftijd: </label> 
+                    <br>
+                    <input id="leeftijd" placeholder="Leeftijd" type="number" name="leeftijd">
+                    <br>
+                    <label id="label-lengte" for="lengte" for="lengte">Lengte: </label>
+                    <br>
+                    <input id="lengte" placeholder="Lengte" type="text" name="lengte">
+                    <br>
+                    <label id="label-gewicht" for="gewicht">Gewicht: </label> 
+                    <br>
+                    <input type="number" placeholder="gewicht" id="gewicht" name="gewicht">
+                    <br><br>
+                    <input type="submit" value="Verstuur">
+                </form>
+            </div>
         </div>
     </main>
     <footer>
