@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/standard.css">
     <link rel="stylesheet" href="../css/recepten.css">
     <link rel="stylesheet" href="/css/recepten.css">
+    <link href="https://fonts.googleapis.com/css?family=Lovers+Quarrel" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -25,18 +26,32 @@
         </div>
     </header>
     <main>
-        <div id="main-div">
-            <div id="recepten-title">
-                Recepten
-            </div>
-            <div id="recepten">
+        <div id="main-div"> 
+            <div class="book">
+                <div id="pages" class="pages">
+                  <div class="page"><p class="title">Recepten <br>Boek</p></div>
+                  <div class="page recept_1">
+                    <div id="title-recept-1"></div>
+                  </div>
+                  <div class="page">
+                    <div id="ingredients-recept-1"></div>
+                    <br>
+                      <div id="steps-recept-1"></div>
+                  </div>
+                  <div class="page recept_2">
 
-            </div>
-            <div id="menu">
-                <div id="menu-next">
-                    
+                  </div>
+                  <div class="page"></div>
+                  <div class="page recept_3">
+
+                  </div>
+                  <div class="page"></div>
+                  <div class="page recept_4">
+
+                  </div>
+                  <div class="page"></div>
+                  <div class="page endpage" id="endpage"></div>
                 </div>
-            </div>
         </div>
     </main>
     <footer>
@@ -46,6 +61,10 @@
             </div>
         </div>
     </footer>
-    <script src="/js/recepten.js"></script>
+    <script src="../js/recepten-1.js"></script>
+    <script src="/js/recepten_1.js"></script>
+
+    <script src="../js/recepten_2.js"></script>
+    <script src="/js/recepten-2.js"></script>
 </body>
 </html>
