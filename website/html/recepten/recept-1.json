@@ -5,16 +5,16 @@
         "teenknoflook": "1",
         "arachideolie": "2 eetlepels",
         "citroen": "1",
-        "zuivelspread-naturel-light": "200",
+        "zuivelspreadnaturellight": "200",
         "Italiaanse-kruiden": "2 eetlepels",
-        "heet-water": "200 ml",
+        "heetwater": "200 ml",
         "kipfiletreepjes": "300 gram",
-        "biologische-volkoren-fusilli": "300 gram",
+        "biologischevolkorenfusilli": "300 gram",
         "glucola": "85"
     },
     "steps": {
-        "1": "Snijd de onderkant en de stelen van de venkelknollen en bewaar het loof. Snijd de knollen in de lengte in parten en snijd in de breedte in dunne reepjes. Snijd de knoflook fijn. Verhit de olie in een hapjespan en bak de venkel en knoflook 10 min. op middelhoog vuur, roer regelmatig.",
-        "2": "Boen ondertussen de citroen schoon, rasp de gele schil en pers 1 helft uit. Snijd de andere helft in plakjes. Voeg de zuivelspread, 2 el citroensap (per 4 personen), de Italiaanse kruiden, het water en de kipreepjes toe en roer door. Breng aan de kook en laat 10 min. met de deksel op de pan zachtjes stoven, roer af en toe.",
-        "3": "Kook ondertussen de pasta volgens de aanwijzingen op de verpakking. Snijd de rucola fijn. Giet de pasta af en meng met de rucola en het citroenrasp door de saus. Breng op smaak met peper en zout. Garneer met het venkelloof en een schijfje citroen."
+        "_1": "Snijd de onderkant en de stelen van de venkelknollen en bewaar het loof. Snijd de knollen in de lengte in parten en snijd in de breedte in dunne reepjes. Snijd de knoflook fijn. Verhit de olie in een hapjespan en bak de venkel en knoflook 10 min. op middelhoog vuur, roer regelmatig.",
+        "_2": "Boen ondertussen de citroen schoon, rasp de gele schil en pers 1 helft uit. Snijd de andere helft in plakjes. Voeg de zuivelspread, 2 el citroensap (per 4 personen), de Italiaanse kruiden, het water en de kipreepjes toe en roer door. Breng aan de kook en laat 10 min. met de deksel op de pan zachtjes stoven, roer af en toe.",
+        "_3": "Kook ondertussen de pasta volgens de aanwijzingen op de verpakking. Snijd de rucola fijn. Giet de pasta af en meng met de rucola en het citroenrasp door de saus. Breng op smaak met peper en zout. Garneer met het venkelloof en een schijfje citroen."
     }
 }
