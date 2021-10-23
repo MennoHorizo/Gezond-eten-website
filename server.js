@@ -33,6 +33,10 @@ router.get('/spel', (req, res, next) => {
   res.sendFile(path.join(__dirname, '/website/html/spell.html'))
 })
 
+app.get('/spel/playing', (req, res, next) => {
+  res.sendFile(path.join(__dirname, '/website/html/spel/spel.html'))
+})
+
 
 router.post('/post/BMI', (req, res, next) => {
   console.log('Recieved info.')
@@ -41,10 +45,6 @@ router.post('/post/BMI', (req, res, next) => {
   const gewicht = req.body.gewicht;
 })
 
-router.post('/post/checked', (req, res, next) => {
-  console.log('Recieved either JS or PHP.')
-  console.log(req)
-})
 
 
 const htmlPath = path.join(__dirname, 'website');
@@ -52,13 +52,9 @@ app.use(express.static(htmlPath));
 
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: true })); 
-app.use(upload.array()); 
+app.use(express.urlencoded({ extended: true }));
+app.use(upload.array());
 app.use(cors())
-router.use(bodyParser.json());
-router.use(bodyParser.urlencoded({
-  extended: true
-}));
 
 app.use(router)
 
