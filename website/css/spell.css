@@ -1,0 +1,23 @@
+#main-div {
+    min-height: 87vh;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#spel-btn {
+    margin: 15% 0;
+    padding: 32px 64px;
+    border-radius: 24px;
+    font-size: 24px;
+    background-color: #4CAF50;
+    color: whitesmoke;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+}
+
+#spel-btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
