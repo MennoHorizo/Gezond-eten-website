@@ -64,32 +64,3 @@ li a:hover {
     font-size: 1.2rem;
     margin: 15px 0;
 }
-
-.banner_image{
-  background: url("images/gezond.jpg");
-  width: 100%;
-  height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.banner_content{
-  text-align: center;
-  color: #fff;
-}
-
-.banner_content h1{
-  line-height: 38px;
-  margin-bottom: 15px;
-}
-
-/* This is optional */
-.banner_content h1 span{
-  color: #fff;
-}
-
-.about{
-  padding: 5% 10%;
-  text-align: center;
-}
