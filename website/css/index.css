@@ -1,5 +1,7 @@
 .banner_image{ /* background image moet misschien nog even veranderd worden */
-    background-image: url("gezond.jpg");
+    background-image: url("../images/gezond1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
     height: 500px;
     display: flex;
