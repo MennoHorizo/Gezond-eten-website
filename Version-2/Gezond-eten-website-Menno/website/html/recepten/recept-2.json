@@ -1,0 +1,19 @@
+{
+    "Titel": "Groenteuil met lekkere dip",
+    "Ingrediënten": {
+        "wortels": "250 gram",
+        "Gelepaprika": "1",
+        "Komkommer": "1",
+        "Roomkaas": "60 gram",
+        "Yoghurt": "30 gram"
+    },
+    "steps":{ 
+        "_1": "1. Neem een platte schotel en 2 kleine potjes voor de ogen van de uil. Schik de babywortelen hierrond.",
+        "_2": "2. Was de komkommer en snij hem in schijfjes. Schik de schijfjes komkommer geschrankt onder de babywortelen. De uiteinden van de komkommer nog bijhouden voor de afwerking.",
+        "_3": "3. Was de gele paprika, verwijder de pitten en snij hem in reepjes. Schik de reepjes aan beiden zijden van de komkommer schuin onder elkaar naar beneden toe voor de vleugels.",
+        "_4": "4. Eindig onderaan met nog een paar babywortelen voor de poten.",
+        "_5": "5. Meng de roomkaas met de yoghurt natuur tot een dipsaus en schep het in de 2 kleine potjes.",
+        "_6": "6. Van de uiteinden van de komkommer kan je nog stukjes snijden voor een snavel, oren en ogen.",
+        "_7": "7. Smakelijk!"
+    }
+}
