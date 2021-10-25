@@ -1,14 +1,11 @@
 <?php
 
-$args = $argv[1];
-$arguments = explode(",", $args);
+$age = $_POST['leeftijd'];
 
-$age = $arguments[0];
-
-$height = $arguments[1];
+$height = $_POST['lengte'];
 $height_2 = $height / 100;
 
-$weight = $arguments[2];
+$weight = $_POST['gewicht'];
 
 function bmi($weight,$height_2) {
     $bmi = $weight/($height_2*$height_2);

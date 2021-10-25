@@ -5,12 +5,14 @@ const router = express.Router()
 require("dotenv").config()
 var cors = require('cors')
 
+const url = require('url')
+const fs = require('fs')
+runner = require("child_process");
+
 var multer = require('multer');
 var upload = multer();
 
 const port = process.env.PORT;
-
-const bodyParser = require('body-parser')
 
 
 router.get('/', (req, res, next) => {
@@ -38,12 +40,75 @@ app.get('/spel/playing', (req, res, next) => {
 })
 
 
-router.post('/post/BMI', (req, res, next) => {
-  console.log('Recieved info.')
-  const leeftijd = req.body.leeftijd;
-  const lengte = req.body.lengte;
-  const gewicht = req.body.gewicht;
+router.post('/php/:path', (req, res, next) => {
+  console.log('/php/' + req.params.path)
+  php(req, res, ('/website/php/' + req.params.path), 'BMI')
 })
+
+
+
+function php(request, response, _path, _function)
+{
+  if (_function == 'BMI') {
+    var param = [request.body.leeftijd, request.body.lengte, request.body.gewicht]
+  } else if (_function == 'QUIZ') {
+    var param;
+  } else {
+    console.log(_function)
+    var param = [request.body.leeftijd, request.body.lengte, request.body.gewicht]
+  }
+  var localpath = path.join(process.cwd(), _path);
+  fs.exists(localpath, function(result) { runScript(result, localpath, param, response)});
+}
+
+function runScript(exists, file, param, response)
+{
+  if(!exists) return sendError(404, 'File not found', response);
+  console.log(param)
+  runner.exec("php " + file + " " + param,
+  function(err, stdout, stderr) { sendData(err, stdout, stderr, response); });
+}
+
+function sendData(err, stdout, stderr, response)
+{
+  if (err) return sendError(500, stderr, response);
+  response.writeHead(200,{"Content-Type": "text/plain;charset=utf-8"});
+  response.write(stdout);
+  response.end();
+}
+
+function sendError(errCode, errString, response)
+{
+  response.writeHead(errCode, {"Content-Type": "text/plain"});
+  response.write(errString + "\n");
+  response.end();
+  return;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
