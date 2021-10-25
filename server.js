@@ -14,8 +14,6 @@ var upload = multer();
 
 const port = process.env.PORT;
 
-const bodyParser = require('body-parser')
-
 
 router.get('/', (req, res, next) => {
   res.sendFile(path.join(__dirname, '/website/index.html'))
