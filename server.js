@@ -14,8 +14,6 @@ var upload = multer();
 
 const port = process.env.PORT;
 
-const bodyParser = require('body-parser')
-
 
 router.get('/', (req, res, next) => {
   res.sendFile(path.join(__dirname, '/website/index.html'))
@@ -44,20 +42,21 @@ app.get('/spel/playing', (req, res, next) => {
 
 router.post('/php/:path', (req, res, next) => {
   console.log('/php/' + req.params.path)
-  php(req, res, ('/website/php/' + req.params.path))
-  /*
-  console.log('Recieved info.')
-  const leeftijd = req.body.leeftijd;
-  const lengte = req.body.lengte;
-  const gewicht = req.body.gewicht;
-  */
+  php(req, res, ('/website/php/' + req.params.path), 'BMI')
 })
 
 
 
-function php(request, response, _path)
+function php(request, response, _path, _function)
 {
-  var param = [request.body.leeftijd, request.body.lengte, request.body.gewicht]
+  if (_function == 'BMI') {
+    var param = [request.body.leeftijd, request.body.lengte, request.body.gewicht]
+  } else if (_function == 'QUIZ') {
+    var param;
+  } else {
+    console.log(_function)
+    var param = [request.body.leeftijd, request.body.lengte, request.body.gewicht]
+  }
   var localpath = path.join(process.cwd(), _path);
   fs.exists(localpath, function(result) { runScript(result, localpath, param, response)});
 }
