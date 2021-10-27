@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
     <link rel="stylesheet" href="../css/standard.css">
+    <link rel="stylesheet" href="../css/Quiz.css">
 </head>
+
 <body>
     <header>
         <div id="header">
@@ -23,18 +26,90 @@
     </header>
     <main>
         <div id="main-div">
-            <div class="main-container">
-                <h2>Nooit</h2>
-                <div class="radio-buttons">
-                    <label class="custom-radio">
-                        <input type="radio" name="radio">
-                        <span class="radio-btn"><i class="las la-check"></i></span>
-                            <div class="hobbies-icon">
-                                <i class="las la-biking"></i>
-                                <h3>Biking</h3>
-                    </label>
-                </div>
-            </div>
+            <h1>Quiz vragen</h1>
+            <form action="../php/quiz.php" method="post">
+                <h2><p>Hoe vaak eet je in de kantine van school?</p></h2>
+                <input type="radio" id="nooit" name="kantine" value="Nooit">
+                <label for="nooit">Nooit</label><br>
+                <input type="radio" id="soms" name="kantine" value="Soms">
+                <label for="soms">Soms</label><br>
+                <input type="radio" id="bijna-elke-dag" name="kantine" value="Bijna elke dag">
+                <label for="bijna elke dag">Bijna elke dag</label><br>
+                <input type="radio" id="elke-dag" name="kantine" value="Elke dag">
+                <label for="elke dag">Elke dag</label>
+
+                <br>
+
+                <h2><p>Is er voldoende gezond aanbod in de kantine op school?</p></h2>
+                <input type="radio" id="ja" name="aanbod" value="JA">
+                <label for="ja">Ja</label><br>
+                <input type="radio" id="nee" name="aanbod" value="NEE">
+                <label for="nee">Nee</label>
+
+                <br>
+
+                <h2><p>Hoe vaak drink je frisdrank?</p></h2>
+                <input type="radio" id="elke-dag" name="drink" value="Elke dag">
+                <label for="elke dag">Elke dag</label><br>
+                <input type="radio" id="paar-x-per-week" name="drink" value="Paar x per week">
+                <label for="paar x per week">Paar x per week</label><br>
+                <input type="radio" id="bijna-nooit" name="drink" value="Bijna nooit">
+                <label for="bijna nooit">Bijna nooit</label>
+                
+                <br>
+                
+                <h2><p>Hoe vaak eet je fruit?</p></h2>
+                <input type="radio" id="elke-dag" name="fruit" value="Elke dag">
+                <label for="elke dag">Elke dag</label><br>
+                <input type="radio" id="paar-x-per-week" name="fruit" value="Paar x per week">
+                <label for="paar x per week">Paar x per week</label><br>
+                <input type="radio" id="bijna-nooit" name="fruit" value="Bijna nooit">
+                <label for="bijna nooit">Bijna nooit</label>
+
+                <br>
+
+                <h2><p>Hoe vaak ontbijt je?</p></h2>
+                <input type="radio" id="elke-dag" name="ontbijt" value="Elke dag">
+                <label for="elke dag">Elke dag</label><br>
+                <input type="radio" id="paar-x-per-week" name="ontbijt" value="Paar x per week">
+                <label for="paar x per week">Paar x per week</label><br>
+                <input type="radio" id="bijna-nooit" name="ontbijt" value="Bijna nooit">
+                <label for="bijna nooit">Bijna nooit</label>
+                
+
+                <br>
+
+                <h2><p>Eet je wel eens na 11 uur ‘s avonds</p></h2>
+                <input type="radio" id="nooit" name="uur" value="Nooit">
+                <label for="nooit">Nooit</label><br>
+                <input type="radio" id="vaak" name="uur" value="Vaak">
+                <label for="vaak">Vaak</label><br>
+                <input type="radio" id="altijd" name="uur" value="Altijd">
+                <label for="altijd">Altijd</label>
+
+                <br>
+
+                <h2><p>Wat is je BMI?</p></h2>
+                <input type="radio" id="ondergewicht" name="bmi" value="Ondergewicht">
+                <label for="ondergewicht">Ondergewicht</label><br>
+                <input type="radio" id="goed" name="bmi" value="Goed">
+                <label for="goed">Goed</label><br>
+                <input type="radio" id="overgewicht" name="bmi" value="Overgewicht">
+                <label for="overgewicht">Overgewicht</label>
+
+                <br>
+
+                <h2><p>Geboortedatum</p></h2>
+                <label for="birthday">Verjaardag:</label>
+                <input type="date" id="birthday" name="birthday">  
+                
+                <br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+            </label>
+        </div>
+        </div>
         </div>
     </main>
     <footer>
@@ -45,4 +120,5 @@
         </div>
     </footer>
 </body>
+
 </html>
