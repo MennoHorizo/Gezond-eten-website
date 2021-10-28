@@ -1,4 +1,5 @@
 <?php
+if (isset($_POST['submit'])) {
 
     $kantine = $_POST['kantine'];
     $aanbod = $_POST['aanbod'];
@@ -40,3 +41,4 @@ if ($score > 3){
 
 $score = $drink + $fruit;
 echo $score;
+}
