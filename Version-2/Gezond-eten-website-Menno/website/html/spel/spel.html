@@ -15,72 +15,35 @@
         Gezond eten spel
     </div>
     <div id="about-game">
-        Dit spel is bedacht om jouw te laten werken met de schijf van vijf.
-        Sleep de plaatjes elk naar de juiste plek in de schijf van vijf, en klik vervolgens op controleren.
+        Dit spel is bedacht om jouw te laten werken met de schijf van vijf.<br>
+        Sleep de plaatjes elk naar de juiste plek in de schijf van vijf, en klik vervolgens op controleren.<br>
         Vervolgens krijg je te zien of je het juist of onjuist heb gedaan.
     </div>
     <div class="main-div" id="gaming game-div">
-        <div id="drop-choices">
-            <div class="item image" id="1" draggable="true">
-                <img src="../../images/brood.png" alt="Brood" height="50px" width="50px">
+        <div id="dropZone">
+            <div id="dropBox1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p>Brood</p>
             </div>
-            <div class="item image" id="2" draggable="true">
-                <img src="../../images/aardappelen.png" alt="Aardappelen" height="50px" width="50px">
+            <div id="dropBox2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p>Groente en fruit</p>
             </div>
-            <div class="item image" id="3" draggable="true">
-                <img src="../../images/banaan.png" alt="Banaan" height="50px" width="50px">
+            <div id="dropBox3" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p>Vlees en vis</p>
             </div>
-            <div class="item image" id="4" draggable="true">
-                <img src="../../images/bloemkool.png" alt="Bloemkool" height="50px" width="50px">
+            <div id="dropBox4" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p>Boter en olie</p>
             </div>
-            <div class="item image" id="5" draggable="true">
-                <img src="../../images/vis.png" alt="Vis" height="50px" width="50px">
-            </div>
-            <div class="item image" id="6" draggable="true">
-                <img src="../../images/vlees.png" alt="Vlees" height="50px" width="50px">
-            </div>
-            <div class="item image" id="7" draggable="true">
-                <img src="../../images/boter.png" alt="Boter" height="50px" width="50px">
-            </div>
-            <div class="item image" id="8" draggable="true">
-                <img src="../../images/pan-boter.png" alt="Braad boter" height="50px" width="50px">
-            </div>
-            <div class="item image" id="9" draggable="true">
-                <img src="../../images/thee.png" alt="Thee" height="50px" width="50px">
-            </div>
-            <div class="item image" id="10" draggable="true">
-                <img src="../../images/water.png" alt="Water" height="50px" width="50px">
+            <div id="dropBox5" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p>Drinken</p>
             </div>
         </div>
-        <div id="center-line"></div>
-        <div id="drop-targets">
-            <div id="target-1">
-                <span id="title-box">Groente en fruit</span>
-                <div id="box"></div>
-                <div id="box"></div>
-            </div>
-            <div id="target-2">
-                <span id="title-box">Brood en vezels</span>
-                <div id="box"></div>
-                <div id="box"></div>
-            </div>
-            <div id="target-3">
-                <span id="title-box">Vlees en vis</span>
-                <div id="box"></div>
-                <div id="box"></div>
-            </div>
-            <div id="target-4">
-                <span id="title-box">Boter en olie</span>
-                <div id="box"></div>
-                <div id="box"></div>
-            </div>
-            <div id="target-5">
-                <span id="title-box">Drinken</span>
-                <div id="box"></div>
-                <div id="box"></div>
-            </div>
+        <div id="sv5"></div>
+        <div id="submit">
+            <input type="button" value="Submit" onclick="check_if_correct()">
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script src="./js/playing.js"></script>
 </body>
 
