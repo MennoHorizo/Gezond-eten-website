@@ -41,6 +41,7 @@ function shuffle_ing() {
         check_numbers();
     }
 
+    
     function check_numbers() {
         if (rn_1 == rn_2 || rn_1 == rn_3 || rn_1 == rn_4 || rn_1 == rn_5) {
             console.log("rn 1 wasn't correct");
@@ -87,6 +88,8 @@ function shuffle_ing() {
         }
     }
     get_images_into_div();
+
+
 
     function get_images_into_div() {
         //image 1
@@ -264,6 +267,8 @@ function shuffle_ing() {
     document.getElementById("sv5").innerHTML = div;
 }
 
+
+
 function allowDrop(event) {
     event.preventDefault();
 }
@@ -304,21 +309,7 @@ function drop(event) {
     } else console.error("error");
 }
 
-let X, Y;
 
-function get_pos (element) {
-    let rect = element.getBoundingClientRect()
-    for (var key in rect) {
-        if(typeof rect[key] !== 'function') {
-          X = rect['left']
-          Y = rect['top']
-        }
-      }
-    return {
-        x: X,
-        y: Y
-    }
-}
 
 function childOf(c,p){while((c=c.parentNode)&&c!==p);return !!c}
 
@@ -335,36 +326,6 @@ function check_if_correct () {
     const img4 = document.getElementById('boter')
     const img5 = document.getElementById('thee')
 
-    /*
-
-    const box1_x = get_pos(box_1).x;
-    const box2_x = get_pos(box_2).x;
-    const box3_x = get_pos(box_3).x;
-    const box4_x = get_pos(box_4).x;
-    const box5_x = get_pos(box_5).x;
-
-    const box1_y = get_pos(box_1).y;
-    const box2_y = get_pos(box_2).y;
-    const box3_y = get_pos(box_3).y;
-    const box4_y = get_pos(box_4).y;
-    const box5_y = get_pos(box_5).y;
-
-
-    const img1_x = get_pos(img1).x;
-    const img2_x = get_pos(img2).x;
-    const img3_x = get_pos(img3).x;
-    const img4_x = get_pos(img4).x;
-    const img5_x = get_pos(img5).x;
-
-    const img1_y = get_pos(img1).y;
-    const img2_y = get_pos(img2).y;
-    const img3_y = get_pos(img3).y;
-    const img4_y = get_pos(img4).y;
-    const img5_y = get_pos(img5).y;
-
-    */
-
-
     let ca = false;
     c1 = childOf(img1, box_1);
     c2 = childOf(img2, box_2);
@@ -372,6 +333,7 @@ function check_if_correct () {
     c4 = childOf(img4, box_4);
     c5 = childOf(img5, box_5);
     if(c1==true){if(c2==true){if(c3==true){if(c4==true){if(c5==true){ca=true}}}}};
-    if(ca==true){alert('Correct.')}else{alert('Not correct.')}
+    if(ca==true){alert('Correct.')}else{alert('Not correct.');window.location.reload()}
+    console.log(ca)
     return ca;
 }
