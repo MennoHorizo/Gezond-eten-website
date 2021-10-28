@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function(){
          }
       }
 })
+/*
 
 document.addEventListener('DOMContentLoaded', async function() {
     //recept 1
@@ -123,3 +124,4 @@ document.addEventListener('DOMContentLoaded', async function() {
 
 
 })
+*/
