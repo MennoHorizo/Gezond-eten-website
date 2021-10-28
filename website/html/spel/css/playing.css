@@ -1,0 +1,91 @@
+:root {
+  --background-color-nav: rgb(94, 93, 93);
+  --black: #111;
+  --background-color-footer: rgb(94, 93, 93);
+  --white: white;
+
+  --main-background: #f08700;
+  --secondary-background: #f49f0a;
+  --third-background: #efca08;
+  --main-blue: #00a6a6;
+  --secondary-blue: #bbdef0;
+}
+
+#drop-choices {
+  float: left;
+}
+#drop-targets {
+  float: right;
+}
+#title-game {
+  line-height: 2em;
+  font-size: 40px;
+  color: var(--white);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  margin: 25px;
+}
+#about-game {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.box {
+  padding: 50px;
+  border: black solid 1px;
+  background-color: var(--white);
+  z-index: -1;
+}
+/*
+.hide {
+  display: none;
+}
+.drag-over {
+  border: dashed 3px red;
+}
+*/
+
+#dropZone,
+#sv5 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  min-height: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#dropBox1,
+#dropBox2,
+#dropBox3,
+#dropBox4,
+#dropBox5 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+img {
+  height: 150px;
+  object-fit: cover;
+  width: 150px;
+}
+
+input[type=button] {
+    background: var(--main-blue);
+    margin: 50px;
+    padding: 25px;
+    border: 0 none;
+    font-size: 50px;
+    cursor: pointer;
+    -webkit-border-radius: 10px;
+    border-radius: 20px;
+    color: white;
+  }
+  #submit {
+      text-align: center;
+  }
