@@ -1,0 +1,44 @@
+:root {
+    --background-color-nav: rgb(94, 93, 93);
+    --black: #111;
+    --background-color-footer: rgb(94, 93, 93);
+    --white: white;
+
+    --main-background: #F08700;
+    --secondary-background: #F49F0A;
+    --third-background: #EFCA08;
+    --main-blue: #00A6A6;
+    --secondary-blue: #BBDEF0;
+}
+
+#drop-choices {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hide {
+    display: none;
+}
+.drag-over {
+    border: dashed 3px red;
+}
