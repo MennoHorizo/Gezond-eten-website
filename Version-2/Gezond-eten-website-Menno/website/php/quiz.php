@@ -20,6 +20,10 @@
     $bmi = $_POST['bmi'];
     $score = 0;
 
+?>
+    <div>
+<?php
+
 if ($aanbod == "Nee") {
     echo "Vraag aan school voor meer gezonde dingen<br>";
 }
@@ -37,7 +41,7 @@ if ($bmi == "Goed") {
 }
 
 if ($bmi == "Ondergewicht") {
-    echo "Probeer meer te eten";
+    echo "Probeer meer te eten<br>";
 }
 
 $score = $kantine + $drink + $fruit + $ontbijt + $uur;
@@ -56,6 +60,6 @@ if ($score >= 13 && $score <= 16 ){
 }
 
 ?>
-
+</div>
 </body>
 </html>
