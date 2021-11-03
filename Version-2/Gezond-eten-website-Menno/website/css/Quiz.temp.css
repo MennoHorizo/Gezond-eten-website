@@ -1,0 +1,17 @@
+body {
+    background-color: #F08700;
+}
+
+div {
+    background-color: #EFCA08;
+    border: 1px solid;
+    border-color: #F49F0A;
+    width: 40%;
+    padding: 10px;
+    margin: 0px auto;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
