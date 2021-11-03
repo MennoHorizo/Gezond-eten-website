@@ -7,6 +7,20 @@
     <title>Controle programma</title>
 </head>
 <body>
-    
+    <form action="./controle.php" method="post">
+        <div class="left center" id="bmi-calc-num">
+            <label for="controle">BMI:</label><br><br>
+            <input type="text" id="controle" name="controle">
+        </div>
+        <div class="right center" id="numbers-user">
+            <label for="leeftijd">Leeftijd:</label><br><br>
+            <input type="number" name="leeftijd" id="leeftijd"><br><br>
+            <label for="lengte">Lengte in cm:</label><br><br>
+            <input type="text" id="lengte" name="lengte"><br><br>
+            <label for="gewicht">Gewicht in kg:</label><br><br>
+            <input type="text" id="gewicht" name="gewicht"><br><br>
+            <input type="submit" value="Controleer">
+        </div>  
+    </form>
 </body>
 </html>

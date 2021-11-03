@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spel</title>
+    <link rel="stylesheet" href="../../css/standard.css">
+    <link rel="stylesheet" href="./css/playing.css">
+</head>
+
+<body>
+    <div id="title-game">
+        Gezond eten spel
+    </div>
+    <div id="about-game">
+        Dit spel is bedacht om jouw te laten werken met de schijf van vijf.<br>
+        Sleep de plaatjes elk naar de juiste plek in de schijf van vijf, en klik vervolgens op controleren.<br>
+        Vervolgens krijg je te zien of je het juist of onjuist heb gedaan.
+    </div>
+    <div class="main-div" id="gaming game-div">
+        <div id="dropZone">
+            <div id="dropBox1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p>Brood</p>
+            </div>
+            <div id="dropBox2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p>Groente en fruit</p>
+            </div>
+            <div id="dropBox3" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p>Vlees en vis</p>
+            </div>
+            <div id="dropBox4" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p>Boter en olie</p>
+            </div>
+            <div id="dropBox5" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <p>Drinken</p>
+            </div>
+        </div>
+        <div id="sv5"></div>
+        <div id="submit">
+            <input type="button" value="Submit" onclick="check_if_correct()">
+        </div>
+    </div>
+    <script src="./js/playing.js"></script>
+</body>
+
+</html>
